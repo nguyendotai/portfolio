@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import ProjectCard from '@/components/ProjectCard';
-import SkillBadge from '@/components/SkillBadge';
+import { motion } from "framer-motion";
+import ProjectCard from "@/components/ProjectCard";
+import SkillBadge from "@/components/SkillBadge";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -20,33 +20,46 @@ const staggerContainer = {
 export default function Home() {
   const projects = [
     {
-      title: 'Tour Booking Platform',
+      title: "Travel Booking Platform",
       description:
-        'Full-stack travel booking app with real-time availability, Stripe payments, admin dashboard, and responsive design.',
-      link: 'https://github.com/yourusername/booking-tour',
-      tags: ['Next.js 14', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind', 'Stripe'],
+        "Ứng dụng đặt tour du lịch full-stack cho phép người dùng tìm kiếm, xem chi tiết tour, đặt chỗ và thanh toán trực tuyến. Hệ thống có trang quản trị để quản lý tour, người dùng và đơn đặt. Tối ưu trải nghiệm người dùng và thiết kế responsive.",
+      link: "https://github.com/yourusername/travel-booking",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+      ],
     },
     {
-      title: 'AI Chat Application',
+      title: "DTPerfume - E-commerce Website",
       description:
-        'Real-time chat app powered by modern LLMs with markdown rendering, dark mode, and file upload support.',
-      link: 'https://github.com/yourusername/ai-chat',
-      tags: ['React', 'Next.js', 'Tailwind', 'Vercel AI SDK', 'Supabase'],
+        "Website thương mại điện tử bán nước hoa với các chức năng đăng ký, đăng nhập, phân quyền người dùng (admin/user), quản lý sản phẩm, danh mục, giỏ hàng và đơn hàng. Tích hợp upload ảnh, xác thực email và hệ thống admin riêng.",
+      link: "https://github.com/yourusername/dtperfume-site",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Express",
+        "Sequelize",
+        "MySQL",
+        "Redux Toolkit",
+      ],
     },
-    // Add more real projects here
   ];
 
   const skills = [
-    'Next.js',
-    'React',
-    'TypeScript',
-    'Tailwind CSS',
-    'Node.js',
-    'Prisma',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'AWS',
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "Prisma",
+    "PostgreSQL",
+    "Git",
+    "Docker",
+    "AWS",
   ];
 
   return (
@@ -72,16 +85,17 @@ export default function Home() {
 
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-extrabold mb-6 text-purple-600"
           >
-            Hi, I'm Tai
+            Nguyễn Đỗ Tài
           </motion.h1>
 
           <motion.p
             variants={fadeInUp}
             className="text-xl sm:text-2xl md:text-3xl mb-12 text-gray-300 max-w-3xl mx-auto"
           >
-            Full-Stack Developer crafting scalable, performant web experiences with modern JavaScript stack
+            Lập trình viên Full-Stack xây dựng các ứng dụng web hiện đại, hiệu
+            năng cao và dễ mở rộng với hệ sinh thái JavaScript
           </motion.p>
 
           <motion.div
@@ -89,18 +103,26 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <button
-              onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .querySelector("#projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white font-semibold overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <span className="relative z-10">Explore Projects</span>
+              <span className="relative z-10">Xem Dự Án</span>
               <span className="absolute inset-0 bg-white/15 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
             </button>
 
             <button
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-8 py-4 border-2 border-blue-500/50 text-blue-400 rounded-xl hover:bg-blue-950/40 transition-all duration-300"
             >
-              Get in Touch
+              Liên Hệ
             </button>
           </motion.div>
         </motion.div>
@@ -116,18 +138,26 @@ export default function Home() {
         className="max-w-5xl mx-auto px-6"
       >
         <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-          About Me
+          Về Tôi
         </h2>
 
         <div className="bg-gray-900/40 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-8 md:p-12 shadow-2xl space-y-6 text-lg leading-relaxed text-gray-300">
           <p>
-            I'm a passionate full-stack developer based in Ho Chi Minh City, Vietnam, with strong focus on building clean, scalable, and user-centric web applications.
+            Tôi là một lập trình viên full-stack đam mê công nghệ, hiện đang
+            sống và làm việc tại TP. Hồ Chí Minh, với định hướng xây dựng các
+            ứng dụng web sạch, dễ mở rộng và tập trung vào trải nghiệm người
+            dùng.
           </p>
           <p>
-            My current stack includes <strong>Next.js 14/15</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>Prisma</strong>, and modern backend solutions. I enjoy turning complex problems into elegant, maintainable code.
+            Công nghệ tôi sử dụng bao gồm <strong>Next.js 14/15</strong>,{" "}
+            <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>,{" "}
+            <strong>Prisma</strong> và các giải pháp backend hiện đại. Tôi thích
+            biến những bài toán phức tạp thành các giải pháp gọn gàng và dễ bảo
+            trì.
           </p>
           <p>
-            When not coding, I'm exploring new tech, contributing to open source, or planning my next travel adventure.
+            Khi không lập trình, tôi thường tìm hiểu công nghệ mới, đóng góp mã
+            nguồn mở hoặc lên kế hoạch cho những chuyến du lịch tiếp theo.
           </p>
         </div>
       </motion.section>
@@ -142,7 +172,7 @@ export default function Home() {
         className="max-w-7xl mx-auto px-6"
       >
         <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-          My Projects
+          Dự Án Của Tôi
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -164,7 +194,7 @@ export default function Home() {
         className="max-w-5xl mx-auto px-6 text-center"
       >
         <h2 className="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-          My Skills
+          Kỹ Năng
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-5">
@@ -186,19 +216,19 @@ export default function Home() {
         className="max-w-4xl mx-auto px-6"
       >
         <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-          Let's Connect
+          Kết Nối Với Tôi
         </h2>
 
         <div className="bg-gray-900/40 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-8 md:p-12 shadow-2xl">
           <form
-            action="https://formspree.io/f/your-form-id" // ← replace with your Formspree / Getform / etc ID
+            action="https://formspree.io/f/your-form-id"
             method="POST"
             className="space-y-6"
           >
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="Họ và tên của bạn"
               required
               className="w-full p-4 bg-gray-800/50 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
             />
@@ -206,14 +236,14 @@ export default function Home() {
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Email của bạn"
               required
               className="w-full p-4 bg-gray-800/50 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
             />
 
             <textarea
               name="message"
-              placeholder="Your Message"
+              placeholder="Nội dung tin nhắn"
               rows={6}
               required
               className="w-full p-4 bg-gray-800/50 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none"
@@ -223,7 +253,7 @@ export default function Home() {
               type="submit"
               className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white font-semibold hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
             >
-              Send Message
+              Gửi Tin Nhắn
             </button>
           </form>
         </div>

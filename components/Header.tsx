@@ -10,7 +10,7 @@ export default function Header() {
   const scrollTo = (id: string) => {
     if (lenis) {
       lenis.scrollTo(`#${id}`, {
-        offset: -80, // header height compensation
+        offset: -80, 
         duration: 1.5,
         lerp: 0.1,
       });
@@ -27,12 +27,12 @@ export default function Header() {
           onClick={() => scrollTo('hero')}
           className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:opacity-90 transition-opacity"
         >
-          Tai
+          DTAIN
         </button>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-10">
-          {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+          {['Giới thiệu', 'Dự án', 'Kĩ năng', 'Liên hệ'].map((item) => (
             <li key={item}>
               <button
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -64,7 +64,7 @@ export default function Header() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden mt-4 space-y-6 pb-6 text-center bg-gray-900/95 backdrop-blur-lg border-t border-gray-800">
-          {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+          {['Giới thiệu', 'Dự án', 'Kĩ năng', 'Liên hệ'].map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item.toLowerCase())}
