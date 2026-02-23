@@ -23,7 +23,7 @@ export default function Home() {
       title: "Travel Booking Platform",
       description:
         "Ứng dụng đặt tour du lịch full-stack cho phép người dùng tìm kiếm, xem chi tiết tour, đặt chỗ và thanh toán trực tuyến. Hệ thống có trang quản trị để quản lý tour, người dùng và đơn đặt. Tối ưu trải nghiệm người dùng và thiết kế responsive.",
-      link: "https://github.com/yourusername/travel-booking",
+      link: "https://github.com/nguyendotai/travel-booking-site",
       tags: [
         "Next.js",
         "TypeScript",
@@ -37,7 +37,7 @@ export default function Home() {
       title: "DTPerfume - E-commerce Website",
       description:
         "Website thương mại điện tử bán nước hoa với các chức năng đăng ký, đăng nhập, phân quyền người dùng (admin/user), quản lý sản phẩm, danh mục, giỏ hàng và đơn hàng. Tích hợp upload ảnh, xác thực email và hệ thống admin riêng.",
-      link: "https://github.com/yourusername/dtperfume-site",
+      link: "https://github.com/nguyendotai/dtperfume-site",
       tags: [
         "Next.js",
         "TypeScript",
