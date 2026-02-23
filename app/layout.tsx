@@ -8,7 +8,7 @@ import { LenisProvider } from '@/components/providers/LenisProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Tai - Full-Stack Developer Portfolio',
+  title: 'Tai - Frontend Developer Portfolio',
   description: 'Building scalable web applications with Next.js, TypeScript & modern stack.',
 };
 

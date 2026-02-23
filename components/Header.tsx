@@ -30,6 +30,7 @@ export default function Header() {
           DTAIN
         </button>
 
+        {/* Desktop nav */}
         <ul className="hidden md:flex space-x-10">
           {['Giới thiệu', 'Dự án', 'Kĩ năng', 'Liên hệ'].map((item) => (
             <li key={item}>
@@ -44,6 +45,7 @@ export default function Header() {
           ))}
         </ul>
 
+        {/* Mobile hamburger */}
         <button
           className="md:hidden text-gray-300 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -59,6 +61,7 @@ export default function Header() {
         </button>
       </nav>
 
+      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden mt-4 space-y-6 pb-6 text-center bg-gray-900/95 backdrop-blur-lg border-t border-gray-800">
           {['Giới thiệu', 'Dự án', 'Kĩ năng', 'Liên hệ'].map((item) => (
